@@ -8,4 +8,4 @@ My Codes for Computer Graphics Lecture with WebGL
 ## Examples
 | Problem Description      | Source Code | Language |
 | :-----------: | :-----------: | :-----------: |
-| Sierpinski Gasket | .... | `Javascript` | 
+| Sierpinski Gasket | .... | `GLSL` <br> `Javascript` | 
