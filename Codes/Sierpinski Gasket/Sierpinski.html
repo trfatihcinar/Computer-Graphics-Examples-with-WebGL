@@ -1,0 +1,49 @@
+<html>
+
+    <body>
+
+        <canvas id = "canvas" width = "650" height = "650"></canvas>
+
+    </body>
+
+    <!-- KÖŞE HESAPLAYICISI-->
+    <script id = "vertex-shader" type = "x-shader/vertex-shader">
+
+        attribute vec4 vPosition;
+        // it gets verteces as parameter
+
+        void main(){
+
+            gl_PointSize = 2.0; // size of the vertices / points
+            gl_Position = vPosition; // DO NOT CHANGE COORDINATE
+        }
+        
+    </script>
+
+    <script id = "fragment-shader" type = "x-shader/fragment-shader">
+
+        precision mediump float;
+
+        void main(){
+            // decide the color of the points / pixels
+
+            vec4 colorWhite = vec4(1.0, 1.0, 1.0, 1.0); 
+            gl_FragColor = colorWhite; // R,G,B,ALPHA
+            // it returns this
+            
+        }
+    
+    </script>
+
+    <!-- SHADER INITIALIZER-->
+    <script src="initShaders.js"></script>
+
+    <!--RENDERER / DRAWER-->
+    <script src = "Sierpinski.js"></script>
+
+    <!--MATRIX/VECTOR OPERATIONS-->
+    <script src = "MV.js"></script>
+
+    
+
+</html>
