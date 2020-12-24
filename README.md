@@ -11,11 +11,13 @@ My Codes for Computer Graphics Lecture with WebGL
 
 
 
-## Examples
+## Sierpinski Gasket
 | Problem Description      | Source Code | Language |
 | :-----------: | :-----------: | :-----------: |
-| Sierpinski Gasket | .... | `GLSL` <br> `Javascript` | 
+| Sierpinski Gasket | [Code](https://github.com/trfatihcinar/Computer-Graphics-Examples-with-WebGL/tree/main/Codes/Sierpinski%20Gasket) | `GLSL` <br> `Javascript` | 
 
+<img src = "https://github.com/trfatihcinar/Computer-Graphics-Examples-with-WebGL/blob/main/Codes/Sierpinski%20Gasket/Sierpinski%20Gasket%20Drawn%20YP.jpg?raw=true"
+width = "400" height = "400">
 
 ## Rotating a Square
 | Problem Description      | Source Code | Language |
