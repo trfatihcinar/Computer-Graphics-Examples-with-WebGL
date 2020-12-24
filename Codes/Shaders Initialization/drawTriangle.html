@@ -1,0 +1,51 @@
+<html>
+
+    <body>
+        <canvas id = "glcanvas"  width = "600"  height = "600"></canvas>
+    </body>
+
+    <!-- VERTEX SHADER VE FRAGMENT SHADER, Javascript kodundan önce yazılmalı ki 
+    kod okuduğu zaman bunları, bunları bulabilsin.-->
+
+    <script id = "vertex-shader" type = "x-shader/x-vertex">
+
+            attribute vec4 vertexPosition;
+            // Vertex buffer'ında depoladığımız, vertex position bilgisi
+            // vertex shader'a iletilecek, INPUT OLARAK ALIYOR
+
+            void main(){
+                // Üçgen örneğinde köşelerin kordinatlarına DOKUNMAYACAK
+                // ALDIĞI KORDİNATLARI AYNEN PASS EDECEK
+
+                gl_Position = vertexPosition;   
+                // aldığı köşe bilgisini değiştirmeden doğrudan iletiyor.
+
+                // OUTPUT : gl_Position DEĞİŞKENİ, Türü vect4
+            }
+    </script>
+
+    <script id="fragment-shader"  type="x-shader/x-fragment">
+        // her bir pixel için çağrılır
+        // her bir pixelin rengini belirlemeli.
+
+        precision mediump float; 
+        // This determines how much precision the GPU uses when calculating floats. 
+
+        void main(){
+            
+            gl_FragColor = vec4(0.8, 0.2, 0.3, 1.0);
+            // bir renk ve opaklık verdim, üçgenin tamamı bu renkle gözükcek
+
+            // OUTPUT: gl_FragColor DEĞİŞKENİ,  vect4,  R,G,B, ALPHA
+
+            // üçgenin rengi burada belirlendi.
+        }
+
+    </script>    
+
+
+
+    <script src = "drawTriangle.js"></script>
+    <!-- This Javascipt code will draw triangle-->
+
+</html>
