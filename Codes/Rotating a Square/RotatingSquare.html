@@ -1,0 +1,48 @@
+<html>
+    <body>
+        <canvas id = "glcanvas" width = "600" height = "600"></canvas>
+    </body>
+
+    <!-- Vertex Shader-->
+    <script id = "vertex-shader" type = "x-shader/x-vertex">
+        // Vertex shader will calculate the position
+        // of each vertex based on the THETA
+        // This process will be done on the GPU
+
+        attribute vec4 vPosition; // We get the coordinate of the vertex
+        uniform float theta; // Theta will come, uniform variables
+
+        void main()
+        {
+            // Calculate the new positions of each vertex based on theta
+            // CHANGE STATE OF gl_Position
+
+            
+            gl_Position.x = cos(theta) * vPosition.x - sin(theta) * vPosition.y;
+            gl_Position.y = sin(theta) * vPosition.x + cos(theta) * vPosition.y;
+            
+            gl_Position.z = 0.0; // no third dimension
+            gl_Position.w = 1.0; // homogeneous coordinate is 1
+
+        }
+
+    </script>
+
+    <!-- Fragment Shader-->
+    <script id = "fragment-shader" type = "x-shader/x-fragment">
+
+        precision mediump float;
+        void main()
+        {
+            // This main function will change THE STATE OF THE gl_FragColor
+            gl_FragColor = vec4(0.5, 0, 0.5, 1.0); // Purple color
+        }
+    </script>
+
+    <script src = "initShaders.js"></script>
+
+    <script src = "MV.js"></script>
+    
+    <script src = "RotatingSquare.js"></script>
+
+</html>
