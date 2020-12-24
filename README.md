@@ -17,3 +17,11 @@ My Codes for Computer Graphics Lecture with WebGL
 | Sierpinski Gasket | .... | `GLSL` <br> `Javascript` | 
 
 
+## Rotating a Square
+| Problem Description      | Source Code | Language |
+| :-----------: | :-----------: | :-----------: |
+| Rotating a Square | [Code](https://github.com/trfatihcinar/Computer-Graphics-Examples-with-WebGL/tree/main/Codes/Rotating%20a%20Square) | `GLSL` <br> `Javascript` | 
+
+<img src = "https://github.com/trfatihcinar/Computer-Graphics-Examples-with-WebGL/blob/main/Codes/Rotating%20a%20Square/rotating_square_gif.gif?raw=true">
+
+__Rotating a Square__ : Using a Rotational Matrix and a Rotation Angle (theta) we can rotate a square easily, on Shaders (GPU).
